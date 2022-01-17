@@ -1,13 +1,143 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Website</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<!DOCTYPE html>
+<html lang="es" ng-app="UnisegurosApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Axioma DVLP @santu1987">
+    	<meta name="format-detection" content="telephone=no">
+    	<meta name="og:tilte" content="Uniseguros">
+	    <meta name="og:description" content="">
+	    <meta name="og:url" content="">
+	    <meta name="og:site_name" content="Uniseguros">
+	    <meta name="og:type" content="website">
+	    <meta name="og:image" content="">
+		<title>Uniseguros | Sabemos lo que es importante para ti</title>
+		<!-- Favicons-->
+		<link rel="apple-touch-icon" href="web/images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="web/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="web/images/apple-touch-icon-114x114.png">
+		<!-- Web Fonts-->
+		<link href="web/css/fontsgoogleapis.css" rel="stylesheet">
+		<!-- Bootstrap core CSS-->
+		<!-- Plugins and Icon Fonts-->
+		<link href="web/css/plugins.min.css" rel="stylesheet">
+		<!-- Template core CSS-->
+		<link href="web/css/template.min.css" rel="stylesheet">
+		<!-- Plugins -->
+		<link rel="stylesheet" href="web/css/index.css">
+	</head>
+	<body ng-controller="mainController">
+
+<!-- Wrapper-->
+<div class="wrapper" ng-controller="inicioController">
+
+	<!-- Page Header-->
+	
+	<!-- Page Header end-->
+
+	<!-- Quienes somos -->
+	
+	<section id="productos" class="bg-gray-light module module-gray">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-lg-9 pb-lg-4 text-center">
+					<h1 id="prueba_una"class="letter-spacing-2 text-uppercase module-title wow fadeInUp ">Nuestros Productos</h1>
+					<h1 id="prueba_dos"class="letter-spacing-2 text-uppercase module-title wow fadeInUp ">Nuestros Productos</h1>
+					<p class="font-serif"> </p>
+					<span class="bg-base-color d-inline-block mt-4 sep-line-thick-long"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-6 wow fadeInRight">
+					<div class="feature ">
+						<div class="feature-thumb"><img style="" ng-src="{{productos[0].ruta}}" alt=""
+								class="img-servicios"></div>
+						<div class="text-center">
+							<p id="parrafo-comof1-home" class="">{{productos[0].descripcion_sin_html}}</p>
+						</div>
+						<div class="feature-more">
+							<a class="btn btn-circle btn-xs btn-brand"
+								href="productos/{{productos[0].slug}}">Leer Mas</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-6 wow fadeInUp">
+					<div class="feature ">
+						<div class="feature-thumb"><img style="" ng-src="{{productos[1].ruta}}" alt=""
+								class="img-servicios"></div>
+						<div class="text-center">
+							<p id="parrafo-comof1-home" class="">{{productos[1].descripcion_sin_html}}</p>
+						</div>
+						<div class="feature-more">
+							<a class="btn btn-circle btn-xs btn-brand"
+								href="productos/{{productos[1].slug}}">Leer Mas</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-6 wow fadeInLeft">
+					<div class="feature ">
+						<div class="feature-thumb"><img style="" ng-src="{{productos[2].ruta}}" alt=""
+								class="img-servicios"></div>
+						<div class="text-center">
+							<p id="parrafo-comof1-home" class="">{{productos[2].descripcion_sin_html}}</p>
+						</div>
+						<div class="feature-more">
+							<a class="btn btn-circle btn-xs btn-brand"
+								href="productos/{{productos[2].slug}}">Leer Mas</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row centrado boton-nosotros">
+				<div class="col-md-12">
+					<div class="text-center"><a class="btn btn-round btn-lg btn-brand"
+							href="productos">Ver mas</a></div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+	</section>
+
+	<!--Fin productos -->
+	<!-- Parallax de servicios-->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Scripts-->
+		<script src="web/jquery-2.2.4.min.js"></script>
+		<script src="web/popper.min.js"></script>
+		<!--
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+		-->
+		<script src="https://snapwidget.com/js/snapwidget.js"></script>
+    	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
+    	
+		<script src="web/js/plugins.min.js"></script>
+		<script src="web/js/charts.js"></script>
+
+		<script src="web/js/custom.js"></script>
+		<script src="web/main.js"></script>
+
+		<!--Plugins -->
+
+	
+
+	</body>
 </html>
